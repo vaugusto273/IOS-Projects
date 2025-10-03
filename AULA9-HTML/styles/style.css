@@ -1,0 +1,24 @@
+body{
+    color:white;
+    background: #07008c;
+    background: linear-gradient(230deg,rgba(7, 0, 140, 1) 0%, rgba(0, 0, 43, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+.horizontal{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+.horizontal li{
+    display: inline-block;
+    margin-right: 10px;
+}
+img{
+    width: 100vh;
+}
+p{
+    img{
+        width: 15vh;
+        margin: 3px;
+        border: 5px solid rgb(58, 43, 226);
+    }
+}
