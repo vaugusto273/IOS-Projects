@@ -1,0 +1,12 @@
+body{
+    background-image: url(../assets/phoenixWallPaper.jpg);
+    background-size: cover;
+    color: red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color:gold;
+}
+.secret{
+    color: transparent;
+}

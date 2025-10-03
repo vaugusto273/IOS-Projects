@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Formulário de contato </h2>
+    <form action="">
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="password">
+        <br>
+        <br>
+        <label for="message">Mensagem</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="masc" value="masc">
+        <label for="fem">Feminino</label>
+        <input type="radio" name="genero" id="fem" value="fem">
+        <br>
+        <br>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="html" id="html">
+        <br>
+        <label for="css">CSS</label>
+        <input type="checkbox" name="css" id="css">
+        <br>
+        <label for="js">Javascript</label>
+        <input type="checkbox" name="js" id="js">
+        <br>
+        <label for="estadocidade">Estado/Cidade</label>
+        <select name="estadocidade" id="estadocidade">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" id="enviar" name="enviar">
+        <input type="reset" id="reset" name="reset">
+    </form>
+
+</body>
+</html>
