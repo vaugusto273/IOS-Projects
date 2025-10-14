@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    line-height: 1.6;
+}
+.curriculo{
+    background-color: lightgrey;
+    width: 800px;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0px 0px 15px grey;
+}
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#dados{
+    margin: 25px;
+    list-style:square;
+}
+section{
+    padding: 25px 0px;
+    border-bottom: 1px solid black;
+}
+
+.habi{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.habi li{
+    background-color: blue;
+    color: aliceblue;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+} 
+
+.habi li:hover{
+    background-color: rgb(0, 0, 214);
+    transform: translateY(-3px);
+}
