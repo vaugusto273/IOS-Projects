@@ -39,6 +39,8 @@ footer{
     color: #E9E6DD;
     background-color: #0274BD;
     padding: 20px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
 }
 
 button{
@@ -68,4 +70,20 @@ input{
 input:focus{
     border-color:red;
     outline:none;
+}
+
+.stytex::before{
+    content: "🐱‍👤";
+}
+
+.stytex::after{
+    content: "🐱‍👤";
+}
+
+.tex::first-letter{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tex::first-line{
+    color:#0274BD;
 }
