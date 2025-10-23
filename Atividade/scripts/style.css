@@ -1,0 +1,51 @@
+@font-face {
+    font-family: MagicSchool; /* set name */
+    src: url(../assets/fonts/magic-school/MagicSchoolOne.ttf); /* url of the font */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3D88FF;
+}
+
+.head{
+    display: flex;
+    margin: 10px;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.head h1{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    font-family: 'MagicSchool', Arial, sans-serif;
+}
+
+.head img{
+    width: 150px;
+    border-radius: 100%;
+}
+.nav{
+    background-color: #3DE9FF;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0px 5% 0px;
+    justify-content: center;
+    gap: 20px;
+}
+.nav a{
+    background-color: #533DFF;
+    padding: 10px;
+    color:white ;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.nav a:hover{
+    background-color: #4d38ec;
+    color:rgb(236, 236, 236) ;
+}
