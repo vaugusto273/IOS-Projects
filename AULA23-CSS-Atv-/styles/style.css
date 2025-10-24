@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #3a3a3a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #cfa34f;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #cfa34f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #cfa34f;
+    color: #000;
+}
+
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    margin: 20px 0 10px 0;
+    color: #cfa34f;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #cfa34f;
+}
+
+.rpg-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rpg-section img {
+    max-width: 150px;
+    border-radius: 10px;
+    border: 2px solid #cfa34f;
+}
+
+.rpg-section p {
+    flex: 1;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #744d1e;
+    color: #f5f5f5;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e2bb67;
+    color: #000;
+}
+
+ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #cfa34f;
+    color: #000;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #cfa34f;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+tbody tr:hover {
+    background-color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cfa34f;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cfa34f;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #e2bb67;
+    background-color: #292929;
+}
+
+footer {
+    background: #3a3a3a;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #cfa34f;
+}
+
+h1::after {
+    content: ' ✨';
+}
+
+section h2::before {
+    content: '🗡️ ';
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rpg-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rpg-section img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
