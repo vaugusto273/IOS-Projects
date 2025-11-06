@@ -110,6 +110,7 @@ nav a:hover{
     padding: 10px;
     box-shadow: 0 2px 6px var(--shadow-color);
     transition: all 0.2s;
+    cursor: grab;
 }
 .card img{
     width: 100%;
