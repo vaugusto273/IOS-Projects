@@ -1,0 +1,159 @@
+/* Color Pallete*/
+
+:root {
+    /* Cores principais */
+    --color-primary-dark: #000706;
+    /* Fundo principal, quase preto */
+    --color-secondary-dark: #00272d;
+    /* Áreas secundárias, menus, rodapé */
+    --color-accent: #0c7e7e;
+    /* Destaques, links, botões primários */
+    --color-accent-hover: #134647;
+    /* Hover de botões, bordas */
+    --color-highlight: #bfac8b;
+    /* Destaques suaves, ícones, detalhes premium */
+
+    /* Cores de texto */
+    --text-primary: #ffffff;
+    /* Texto sobre fundo escuro */
+    --text-secondary: #bfac8b;
+    /* Texto de destaque ou títulos */
+    --text-muted: #9ca3af;
+    /* Texto desativado ou secundário */
+
+    /* Cores de fundo */
+    --background-main: var(--color-primary-dark);
+    --background-alt: var(--color-secondary-dark);
+    --background-card: #071414;
+    /* Tom intermediário para blocos e cards */
+
+    /* Bordas e sombras */
+    --border-color: #134647;
+    --shadow-color: rgba(12, 126, 126, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-primary-dark);
+    color: var(--text-secondary);
+}
+
+header,footer{
+    text-align: center;
+    background-color: var(--color-accent);
+    color:var(--text-secondary);
+    padding: 20px 0;
+}
+header h1{
+    margin-bottom: 20px;
+}
+header a, footer a{
+    color: var(--text-primary);
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    margin: 10px;
+    
+}
+
+nav a{
+    background-color: var(--background-card);
+    margin:10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+nav a:hover{
+    background-color: var(--color-accent-hover);
+    text-decoration: underline;
+}
+
+.container{
+    min-height: 30%;
+    gap: 10px;
+    background-color: var(--color-secondary-dark);
+    padding: 10px;
+    border: 2px solid var(--border-color);
+}
+.container h1{
+    border-bottom: 2px solid var(--border-color);
+
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    min-height: 30vh;
+    min-width: 30vw;
+}
+
+.card{
+    border:10px double var(--border-color);
+    flex: 1 1 30%;
+    background-color: var(--color-accent);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    transition: all 0.2s;
+    cursor: grab;
+}
+.card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: white;
+}
+.border{
+    display: block;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 15px;
+}
+.card:hover{
+    transform: scale(1.03);
+    translate: 0px -10px;
+    color:white
+
+}
+
+@media (max-width: 1024px){
+    .card{
+        width: 45%;
+    }
+    .card p{
+        font-size: small;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        flex-direction:column;
+        align-items: center;
+    }
+    .card{
+        min-width: 90%;
+    }
+    .card p{
+        font-size: small;
+    }
+    header, footer{
+        text-align: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
