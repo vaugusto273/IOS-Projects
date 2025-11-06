@@ -58,13 +58,14 @@ header a, footer a{
     text-decoration: none;
 }
 nav ul{
-    list-style: none;
-}
-nav li{
     display: flex;
-    margin: 10px;
+    list-style: none;
     justify-content: center;
     align-items: center;
+}
+nav li{
+    margin: 10px;
+    
 }
 
 nav a{
@@ -150,6 +151,8 @@ nav a:hover{
     }
     header, footer{
         text-align: center;
-        flex-direction: row;
+    }
+    ul{
+        flex-direction: column;
     }
 }
