@@ -57,8 +57,17 @@ header a, footer a{
     color: var(--text-primary);
     text-decoration: none;
 }
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
-header a{
+nav a{
     background-color: var(--background-card);
     margin:10px 0;
     padding: 5px;
@@ -66,7 +75,7 @@ header a{
     transition: 500ms;
 }
 
-header a:hover{
+nav a:hover{
     background-color: var(--color-accent-hover);
     text-decoration: underline;
 }
@@ -107,9 +116,6 @@ header a:hover{
     border-radius: 10px;
     background-color: white;
 }
-.card p{
-    font-size: small;
-}
 .border{
     display: block;
     border-bottom: 2px solid var(--border-color);
@@ -119,12 +125,15 @@ header a:hover{
     transform: scale(1.03);
     translate: 0px -10px;
     color:white
-    
+
 }
 
 @media (max-width: 1024px){
     .card{
         width: 45%;
+    }
+    .card p{
+        font-size: small;
     }
 }
 
@@ -136,7 +145,11 @@ header a:hover{
     .card{
         min-width: 90%;
     }
+    .card p{
+        font-size: small;
+    }
     header, footer{
         text-align: center;
+        flex-direction: row;
     }
 }
