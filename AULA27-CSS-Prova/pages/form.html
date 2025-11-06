@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Formulario de compra</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1><a href="../index.html">SuperStore</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html#comp">Computadores</a></li>
+                <li><a href="../index.html#cel">Celulares</a></li>
+                <li><a href="../index.html#hardw">Hardware</a></li>
+                <li><a href="../index.html#peri">Perifericos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <form id="buyForm" action="#" method="post">
+                <h2>Comprar item</h2>
+                <div class="product-list">
+                    <label for="productSelect">Produto</label>
+                    <select id="productSelect" name="product" required>
+                        <option value="PC1">PC GAMER RYZEN 5 5600GT — R$ 3.499,00</option>
+                        <option value="PC2">PC GAMER AMD Ryzen 7 9800X3D — R$ 19.999,00</option>
+                        <option value="PC3">PC Gamer Neologic Ryzen 5 5600GT — R$ 2.799,00</option>
+                        <option value="CEL1">Smartphone Samsung Galaxy A05s — R$ 899,00</option>
+                        <option value="CEL2">Smartphone Xiaomi Redmi Note 14 — R$ 1.499,00</option>
+                        <option value="CEL3">Smartphone Asus Rog Phone 6D Ultimate — R$ 4.999,00</option>
+                        <option value="HW1">Placa de Vídeo ASUS PRIME-RTX 5060 TI — R$ 2.999,00</option>
+                        <option value="HW2">Placa de Vídeo Asus DUAL RTX 5050 OC — R$ 1.899,00</option>
+                        <option value="HW3">ROG Astral GeForce RTX 5080 HATSUNE MIKU — R$ 14.990,00
+                        </option>
+                        <option value="PER1">Mouse Gamer Logitech G502 LIGHTSPEED — R$ 499,00</option>
+                        <option value="PER2">Teclado Corsair K100 RGB — R$ 1.299,00</option>
+                        <option value="PER3">Monitor LG UltraGear OLED 45" — R$ 5.999,00</option>
+                    </select>
+                </div>
+
+                <div class="price-row">
+                    <label for="itemPrice">Preço</label>
+                    <input type="text" id="itemPrice" name="itemPrice" disabled placeholder="Sem Estoque!" class="flag">
+                </div>
+
+                <div>
+                    <label for="quantity">Quantidade</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+
+                <hr>
+
+                <h3>Dados do comprador</h3>
+                <div>
+                    <label for="buyerName">Nome</label>
+                    <input type="text" id="buyerName" name="buyerName" required>
+                </div>
+                <div>
+                    <label for="buyerEmail">E‑mail</label>
+                    <input type="email" id="buyerEmail" name="buyerEmail" required>
+                </div>
+                <div>
+                    <label for="buyerAddress">Endereço</label>
+                    <textarea id="buyerAddress" name="buyerAddress" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <label for="payment">Forma de pagamento</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Selecione</option>
+                        <option value="cartao">Cartão de crédito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+
+                <div style="margin-top:12px;">
+                    <button type="submit" disabled>Finalizar compra</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por Victor Augusto</p>
+        <p>IOS | 2025</p>
+        <p>🧠</p>
+    </footer>
+
 </body>
+
 </html>
