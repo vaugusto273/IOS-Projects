@@ -47,7 +47,7 @@ body{
 header,footer{
     text-align: center;
     background-color: var(--color-accent);
-    color:var(--text-secondary);
+    color:var(--text-primary);
     padding: 20px 0;
 }
 header h1{
@@ -103,6 +103,8 @@ nav a:hover{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
     border:10px double var(--border-color);
     flex: 1 1 30%;
     background-color: var(--color-accent);
@@ -118,14 +120,25 @@ nav a:hover{
     border-radius: 10px;
     background-color: white;
 }
+.buy-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.buy-btn a{
+    text-decoration: none;
+    color:white;
+    background-color: var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+}
 .border{
     display: block;
     border-bottom: 2px solid var(--border-color);
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .card:hover{
-    transform: scale(1.03);
-    translate: 0px -10px;
+    transform: scale(1.005);
     color:white
 
 }
