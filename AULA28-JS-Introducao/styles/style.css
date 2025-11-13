@@ -28,3 +28,10 @@ body{
     text-shadow: 1px 1px black;
     font-weight: bold;
 }
+
+.container button{
+    background-color: rgba(137, 43, 226, 0.418);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+}
